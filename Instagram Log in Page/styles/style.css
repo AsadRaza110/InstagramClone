@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Billa;
+    src: url(../assets/font/FontsFree-Net-Billabong.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../assets/font/Segoe\ UI\ Bold.ttf);
+}
+
+@font-face {
+    font-family: BoldItalic;
+    src: url(../assets/font/Segoe\ UI\ Bold\ Italic.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../assets/font/Segoe\ UI.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient();
+
+}
+
+.container {
+    text-align: center;
+
+}
+
+.page {
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}
+
+.title {
+    padding: 30px 0;
+    text-transform: capitalize;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Billa;
+
+}
+
+form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form input {
+    font-family: regular;
+    margin-bottom: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    outline: none;
+}
+
+form input :focus {
+
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background: #efefef;
+}
+
+/* input [type="text"],
+input [type="password"] 
+{
+    padding-left: 10px;
+    position: relative;
+    height: 50px;
+    font-size: 17px;
+} */
+
+input::placeholder {
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+input:focus::placeholder {
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-13px);
+}
+
+form button {
+    border: none;
+    font-family: regular;
+    background: #5f78ca;
+    padding: 5px 0;
+    margin-top: 5px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+form button :active {
+    background: #2c58fe;
+    transform: scale(0.995);
+}
+
+form .option {
+    font-family: bold;
+    color: #5a5a5a;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+form .option :before {
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+form .option :after {
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+.fblink {
+    font-family: regular;
+    margin-top: 15px;
+    width: 100%;
+
+}
+
+.fblink span {
+    font-size: 18px;
+    color: #025fd2;
+    margin-right: 5px;
+
+}
+
+.fblink a {
+    font-family: bold;
+    text-decoration: none;
+    font-weight: bold;
+    color: #025fd2;
+
+}
+
+.forget_id {
+    font-family: bold;
+    margin-top: 10px;
+}
+
+.forget_id a {
+    text-decoration: none;
+    color: #2c58fe;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.signup {
+    font-family: regular;
+    position: relative;
+    border: 2px solid #b6b6b6;
+    border-radius: 2px;
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.signup a {
+    font-family: bold;
+    text-decoration: none;
+    color: #025fd2;
+    margin-left: 5px;
+
+}
+.page{
+    border: 2px solid #b6b6b6;
+}
+.text2{
+    font-family: regular;
+}
+.image{
+    position: relative;
+    
+    
+}
+img {
+    height: auto;
+    width: 150px;
+    cursor: pointer;
+}
